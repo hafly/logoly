@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+<<<<<<< HEAD
+=======
+    <Ribbon></Ribbon>
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
     <div class="logo">
       <logo></logo>
     </div>
@@ -8,6 +12,7 @@
     </div>
     <div id="nav">
       <div class="menu">
+<<<<<<< HEAD
         <router-link to="/" class="pb">
           <span class="prefix">横版</span>
           <span class="postfix">Logo</span>
@@ -15,19 +20,36 @@
         <router-link to="/vertical-ph" class="vph">
           <p class="prefix">竖版</p>
           <p class="postfix">Logo</p>
+=======
+        <router-link to="/about">About</router-link>
+        <router-link to="/" class="pb">
+          <span class="prefix">Porn</span>
+          <span class="postfix">hub</span>
+        </router-link>
+        <router-link to="/vertical-ph" class="vph">
+          <p class="prefix">Porn</p>
+          <p class="postfix">hub</p>
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
         </router-link>
         <span class="disable">
           <span class="prefix">You</span>
           <span class="postfix">Tube</span>
         </span>
         <span class="disable">More coming soon...</span>
+<<<<<<< HEAD
         <router-link to="/about">About</router-link>
+=======
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
       </div>
     </div>
     <router-view class="container"/>
     <Slogan class="container"></Slogan>
     <Faq class="container"></Faq>
+<<<<<<< HEAD
     <!--<Author class="container"></Author>-->
+=======
+    <Author class="container"></Author>
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
     <Copyright  class="container"></Copyright>
   </div>
 </template>
@@ -37,6 +59,11 @@ import Logo from "./components/Logo";
 import Description from "./components/Description";
 import Slogan from "./components/Slogan";
 import Faq from "./components/Faq";
+<<<<<<< HEAD
+=======
+import Author from "./components/Author";
+import Ribbon from "./components/Ribbon";
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
 import Copyright from "./components/Copyright";
 export default {
   components: {
@@ -44,6 +71,11 @@ export default {
     Description,
     Slogan,
     Faq,
+<<<<<<< HEAD
+=======
+    Author,
+    Ribbon,
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
     Copyright
   }
 };

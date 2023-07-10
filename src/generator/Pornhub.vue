@@ -76,7 +76,11 @@
     <div
       class="box"
       v-tooltip="{
+<<<<<<< HEAD
         content: '编辑以下文本，生成你的Logo',
+=======
+        content: 'Edit the text to create your own logo',
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
         show: true,
         classes: 'tooltipClasses',
       }"
@@ -135,6 +139,7 @@
       <div
         class="customize-color"
         id="prefixColor"
+<<<<<<< HEAD
         v-tooltip="{ content: '选择你喜欢的颜色', show: true, classes: 'tooltipClasses' }"
       >
         <div>
@@ -151,6 +156,24 @@
         </div>
         <div>
           背景透明: &nbsp;
+=======
+        v-tooltip="{ content: 'Pick a color you like', show: true, classes: 'tooltipClasses' }"
+      >
+        <div>
+          Prefix Text Color: &nbsp;
+          <input type="color" v-model="prefixColor" />
+        </div>
+        <div>
+          Suffix Text Color: &nbsp;
+          <input type="color" v-model="suffixColor" />
+        </div>
+        <div>
+          Suffix Background Color: &nbsp;
+          <input type="color" v-model="postfixBgColor" />
+        </div>
+        <div>
+          Transparent Background: &nbsp;
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
           <input
             type="checkbox"
             value="transparentBg"
@@ -161,16 +184,28 @@
 
       <div class="customize-misc">
         <div>
+<<<<<<< HEAD
           字体大小:
+=======
+          Font Size:
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
           <input type="range" min="30" max="200" v-model="fontSize" />
           {{ fontSize }}px
         </div>
         <div>
+<<<<<<< HEAD
           字体:
           <FontSelector v-on:update-font="(font)=>fontFamily = font" />
         </div>
         <div>
           反向高亮:
+=======
+          Font:
+          <FontSelector v-on:update-font="(font)=>fontFamily = font" />
+        </div>
+        <div>
+          Reverse Highlight:
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
           <input type="checkbox" v-model="reverseHighlight" />
         </div>
       </div>
@@ -179,6 +214,7 @@
     <div class="download-share">
       <div
         class="download"
+<<<<<<< HEAD
         v-tooltip="{ content: '保存你的logo', show: true, classes: 'tooltipClasses' }"
         @click="download"
       >导出/下载</div>
@@ -186,6 +222,15 @@
       <!--<div class="share" @click="twitter">
         <i class="iconfont icon-twitter"></i> Tweet
       </div>-->
+=======
+        v-tooltip="{ content: 'Export your own logo', show: true, classes: 'tooltipClasses' }"
+        @click="download"
+      >Export</div>
+
+      <div class="share" @click="twitter">
+        <i class="iconfont icon-twitter"></i> Tweet
+      </div>
+>>>>>>> 41419d145018c339024a584d38cee4c30a29b1f1
     </div>
   </div>
 </template>
